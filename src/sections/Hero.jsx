@@ -1,12 +1,16 @@
-import personaje from "../imagenes/personaje-bot.png";
+import personaje from "../imagenes/banner-efren.jpg";
 
 function Hero() {
   return (
     <section
       id="hero"
-      className="min-h-screen flex items-center"
+      className=" px-6 py-6"
     >
-
+<img
+  src={personaje}
+  alt="Personaje"
+  className="animate- "
+/>
     </section>
   );
 }
