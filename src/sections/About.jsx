@@ -4,7 +4,7 @@ function About() {
   return (
     <section
       id="about"
-      className="min-h-screen flex items-center bg-primary  py-9"
+      className="min-h-screen flex items-center bg-primary  py-9 background-sg"
     >
       <div className="container mx-auto px-6">
 

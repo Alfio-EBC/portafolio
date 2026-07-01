@@ -19,7 +19,11 @@ html {
 
   --border: #e5e7eb;
 }
-
+.background-sg{
+    background-attachment: fixed;
+    background-color: #050920;
+    background-image: url(https://www.transparenttextures.com/patterns/vintage-speckles.png);
+}
 @theme {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
