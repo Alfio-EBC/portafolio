@@ -13,19 +13,21 @@ function About() {
 
       {/* Contenido */}
       <div className="order-2 lg:order-1">
+        <h2 className="text-4xl md:text-5xl font-bold leading-tight text-white pb-4">Un poco <span className="text-green-500">sobre mi</span></h2>
      <p className="text-white -300 text-lg leading-8 pb-4">
-                Diseñador visual, especialista en gerencia de marketing digital
-                y maquetador web con experiencia en HTML, CSS y JavaScript. Me
+      
+               <strong>Diseñador visual</strong>, especialista en <strong>gerencia de marketing digital</strong>
+                 y maquetador web con experiencia en <strong>HTML</strong>, <strong>CSS</strong> y <strong>JavaScript</strong>. Me
                 enfoco en brindar soluciones centradas en la experiencia de
-                usuario (UX) y la interfaz de usuario (UI), proponiendo ideas
+                usuario (UX) y la interfaz de usuario (UI), <strong>proponiendo ideas
                 innovadoras, accesibles y funcionales que respondan a las
-                necesidades de los diferentes actores involucrados en los
+                necesidades de los diferentes actores</strong> involucrados en los
                 procesos de transformación digital.</p>
  <p className="text-white -300 text-lg leading-8">
                 Cuento con experiencia en la creación de productos digitales
                 orientados a convertir procesos y negocios tradicionales en
                 experiencias digitales eficientes, aplicando principios de
-                usabilidad, accesibilidad y diseño centrado en el usuario. Mi
+                usabilidad, <strong>accesibilidad</strong> y <strong>diseño centrado en el usuario</strong>. Mi
                 objetivo es garantizar una interacción intuitiva, amigable y
                 satisfactoria entre los usuarios y las plataformas digitales.
               </p>

@@ -68,12 +68,7 @@ function Hero() {
               aria-label="Acciones principales"
             >
   
-              <a
-                href="#contact"
-                className="px-6 py-3 rounded-lg border border-green-600 text-white hover:bg-green-600 hover:text-white transition"
-              >
-                Contactarme
-              </a>
+             
             </nav>
           </div>
         </article>
