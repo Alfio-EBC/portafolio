@@ -1,5 +1,4 @@
 import Header from "./layout/Header";
-
 import Hero from "./sections/Hero";
 import About from "./sections/About";
 import Experience from "./sections/Experience";
@@ -12,7 +11,7 @@ function App() {
     <>
       <Header />
 
-      <main className="pt-20">
+      <main className="pt-0">
         <Hero />
         <About />
         <Experience />
@@ -21,6 +20,7 @@ function App() {
         <Contact />
            <Footer />
       </main>
+        
     </>
   );
 }
