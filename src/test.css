@@ -56,3 +56,65 @@ background: linear-gradient(44deg, rgba(2, 21, 55, 1) 77%, rgba(1, 71, 59, 1) 91
     transform: translateY(-15px);
   }
 }
+
+
+
+
+
+
+
+
+/* Fondo */
+.background{
+    width:100%;
+    height:100%;
+
+    background:
+        /* Partículas */
+        radial-gradient(circle at 15% 25%, rgba(255,255,255,.35) 2px, transparent 3px),
+        radial-gradient(circle at 85% 30%, rgba(255,255,255,.20) 3px, transparent 4px),
+        radial-gradient(circle at 60% 75%, rgba(255,255,255,.25) 2px, transparent 3px),
+        radial-gradient(circle at 30% 80%, rgba(0,255,200,.15) 3px, transparent 5px),
+        radial-gradient(circle at 75% 60%, rgba(0,255,180,.12) 4px, transparent 6px),
+
+        /* Tu degradado */
+        linear-gradient(
+            44deg,
+            #021537 77%,
+            #01473b 91%,
+            #006353 100%
+        );
+
+    background-size:
+        220px 220px,
+        320px 320px,
+        260px 260px,
+        400px 400px,
+        500px 500px,
+        cover;
+
+    animation: particlesMove 25s linear infinite;
+}
+
+/* Movimiento de las partículas */
+@keyframes particlesMove{
+    from{
+        background-position:
+            0 0,
+            0 0,
+            0 0,
+            0 0,
+            0 0,
+            center;
+    }
+
+    to{
+        background-position:
+            500px 300px,
+            -350px 450px,
+            250px -300px,
+            -450px -200px,
+            400px -450px,
+            center;
+    }
+}

@@ -11,7 +11,7 @@ function App() {
     <>
       <Header />
 
-      <main className="pt-0">
+      <main className="pt-0 background" >
         <Hero />
         <About />
         <Experience />

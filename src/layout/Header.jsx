@@ -1,8 +1,8 @@
-import { Menu } from "lucide-react";
+import { useState } from "react";
+import { Menu, X } from "lucide-react";
 
 const links = [
-
-  { name: "Sobre mi", href: "#about" },
+  { name: "Sobre mí", href: "#about" },
   { name: "Experiencia", href: "#experience" },
   { name: "Habilidades", href: "#skills" },
   { name: "Proyectos", href: "#projects" },
@@ -10,15 +10,19 @@ const links = [
 ];
 
 function Header() {
-  return (
-    <header className="fixed top-0 left-0 w-full bg-white/80 backdrop-blur-md shadow-sm z-50">
-      <div className="max-w-7xl mx-auto flex items-center justify-between px-8 py-4">
+  const [isOpen, setIsOpen] = useState(false);
 
-        <h1 className="text-2xl font-bold">
-          Alfio Efren Barragan Castillo
+  return (
+    <header className="fixed top-0 left-0 w-full bg-white/90 backdrop-blur-md shadow-sm z-50">
+      <div className="mx-auto max-w-7xl flex items-center justify-between px-6 lg:px-8 py-4">
+
+        {/* Logo */}
+        <h1 className="text-lg md:text-2xl font-bold">
+          Alfio Efren Barragán Castillo
         </h1>
 
-        <nav>
+        {/* Menú Desktop */}
+        <nav className="hidden md:block">
           <ul className="flex items-center gap-8">
             {links.map((link) => (
               <li key={link.name}>
@@ -33,11 +37,34 @@ function Header() {
           </ul>
         </nav>
 
-        <button className="md:hidden">
-          <Menu />
+        {/* Botón móvil */}
+        <button
+          className="md:hidden"
+          onClick={() => setIsOpen(!isOpen)}
+          aria-label="Abrir menú"
+        >
+          {isOpen ? <X size={28} /> : <Menu size={28} />}
         </button>
-
       </div>
+
+      {/* Menú móvil */}
+      {isOpen && (
+        <nav className="md:hidden border-t bg-white">
+          <ul className="flex flex-col py-4">
+            {links.map((link) => (
+              <li key={link.name}>
+                <a
+                  href={link.href}
+                  onClick={() => setIsOpen(false)}
+                  className="block px-6 py-3 text-gray-700 hover:bg-gray-100 transition"
+                >
+                  {link.name}
+                </a>
+              </li>
+            ))}
+          </ul>
+        </nav>
+      )}
     </header>
   );
 }
