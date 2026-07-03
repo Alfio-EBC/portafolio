@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
+import logo from "../imagenes/logo.png";
 
 const links = [
   { name: "Sobre mí", href: "#about" },
@@ -13,12 +14,22 @@ function Header() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <header className="fixed top-0 left-0 w-full bg-white/90 backdrop-blur-md shadow-sm z-50">
+    <header className="fixed top-0 left-0 w-full bg-primary  backdrop-blur-md shadow-sm z-50">
       <div className="mx-auto max-w-7xl flex items-center justify-between px-6 lg:px-8 py-4">
 
         {/* Logo */}
         <h1 className="text-lg md:text-2xl font-bold">
-          Alfio Efren Barragán Castillo
+    
+
+ <img
+              src={logo}
+              alt="Efren Barragán, diseñador UI/UX y desarrollador Front-End"
+              className="w-full"
+              loading="eager"
+            />
+
+
+
         </h1>
 
         {/* Menú Desktop */}
@@ -28,7 +39,7 @@ function Header() {
               <li key={link.name}>
                 <a
                   href={link.href}
-                  className="font-medium text-gray-600 hover:text-blue-600 transition-colors"
+                  className="font-medium text-white hover:text-blue-600 transition-colors"
                 >
                   {link.name}
                 </a>
