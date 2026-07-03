@@ -11,7 +11,7 @@ function Experience() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           <a
-            href="#"
+       
             className="bg-[#] border border-white rounded-xl p-6 shadow-lg hover:border-green-400 hover:-translate-y-2 transition-all duration-300"
           >
             <h3 className="text-2xl font-semibold text-white mb-4">
@@ -29,7 +29,7 @@ function Experience() {
             </p>
           </a>
           <a
-            href="#"
+       
             className="bg-[#] border border-white rounded-xl p-6 shadow-lg hover:border-green-400 hover:-translate-y-2 transition-all duration-300"
           >
             <h3 className="text-2xl font-semibold text-white mb-4">
@@ -47,7 +47,7 @@ function Experience() {
             </p>
           </a>
           <a
-            href="#"
+       
             className="bg-[#] border border-white rounded-xl p-6 shadow-lg hover:border-green-400 hover:-translate-y-2 transition-all duration-300"
           >
             <h3 className="text-2xl font-semibold text-white mb-4">
@@ -64,7 +64,7 @@ function Experience() {
             </p>
           </a>
           <a
-            href="#"
+       
             className="bg-[#] border border-white rounded-xl p-6 shadow-lg hover:border-green-400 hover:-translate-y-2 transition-all duration-300"
           >
             <h3 className="text-2xl font-semibold text-white mb-4">
@@ -81,7 +81,7 @@ function Experience() {
             </p>
           </a>
           <a
-            href="#"
+       
             className="bg-[#] border border-white rounded-xl p-6 shadow-lg hover:border-green-400 hover:-translate-y-2 transition-all duration-300"
           >
             <h3 className="text-2xl font-semibold text-white mb-4">
@@ -98,7 +98,7 @@ function Experience() {
             </p>
           </a>
           <a
-            href="#"
+       
             className="bg-[#] border border-white rounded-xl p-6 shadow-lg hover:border-green-400 hover:-translate-y-2 transition-all duration-300"
           >
             <h3 className="text-2xl font-semibold text-white mb-4">
@@ -116,7 +116,7 @@ function Experience() {
             </p>
           </a>
           <a
-            href="#"
+       
             className="bg-[#] border border-white rounded-xl p-6 shadow-lg hover:border-green-400 hover:-translate-y-2 transition-all duration-300"
           >
             <h3 className="text-2xl font-semibold text-white mb-4">
@@ -132,7 +132,7 @@ function Experience() {
             </p>
           </a>
           <a
-            href="#"
+       
             className="bg-[#] border border-white rounded-xl p-6 shadow-lg hover:border-green-400 hover:-translate-y-2 transition-all duration-300"
           >
             <h3 className="text-2xl font-semibold text-white mb-4">
@@ -148,7 +148,7 @@ function Experience() {
             </p>
           </a>
           <a
-            href="#"
+       
             className="bg-[#] border border-white rounded-xl p-6 shadow-lg hover:border-green-400 hover:-translate-y-2 transition-all duration-300"
           >
             <h3 className="text-2xl font-semibold text-white mb-4">
@@ -164,7 +164,7 @@ function Experience() {
             </p>
           </a>
           <a
-            href="#"
+       
             className="bg-[#] border border-white rounded-xl p-6 shadow-lg hover:border-green-400 hover:-translate-y-2 transition-all duration-300"
           >
             <h3 className="text-2xl font-semibold text-white mb-4">
@@ -180,7 +180,7 @@ function Experience() {
             </p>
           </a>
           <a
-            href="#"
+       
             className="bg-[#] border border-white rounded-xl p-6 shadow-lg hover:border-green-400 hover:-translate-y-2 transition-all duration-300"
           >
             <h3 className="text-2xl font-semibold text-white mb-4">
