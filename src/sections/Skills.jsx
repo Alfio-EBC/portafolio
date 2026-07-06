@@ -1,7 +1,7 @@
 import {
-  Palette,
-  Accessibility,
-  PenTool,
+  LayoutTemplate,
+  Contrast,
+  PanelsTopLeft ,
   Code2,
   Atom,
 } from "lucide-react";
@@ -9,16 +9,16 @@ import {
 function Skills() {
   const skills = [
     {
-      icon: <Palette className="w-10 h-10 text-green-500" />,
+      icon: <LayoutTemplate  className="w-10 h-10 text-green-500" />,
       title: "UI/UX",
     },
     {
-      icon: <Accessibility className="w-10 h-10 text-green-500" />,
-      title: "Accessibility",
+      icon: <Contrast  className="w-10 h-10 text-green-500" />,
+      title: "Accesibilidad",
     },
     {
-      icon: <PenTool className="w-10 h-10 text-green-500" />,
-      title: "Prototyping",
+      icon: <PanelsTopLeft  className="w-10 h-10 text-green-500" />,
+      title: "Prototipo",
     },
     {
       icon: <Code2 className="w-10 h-10 text-green-500" />,
