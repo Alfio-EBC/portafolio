@@ -1,6 +1,5 @@
 import { useState } from "react";
 import { X } from "lucide-react";
-
 import biotablero from "../imagenes/biotablero.png";
 import biotablerodos from "../imagenes/biotablerodos.jpg";
 import biotablerotres from "../imagenes/biotablerotres.jpg";
@@ -136,88 +135,110 @@ description: "El Portal de Proyección Académica fue un proyecto interno desarr
       {/* Modal */}
 
       {selectedProject && (
-        <div className="fixed inset-0 bg-black/70 flex items-center justify-center z-50 p-6">
-          <div className="bg-slate-900 rounded-2xl max-w-6xl w-full max-h-[95vh] overflow-auto relative">
-   <button
-  onClick={() => {
-    setSelectedProject(null);
-    setCurrentImage(0);
-  }}
-  className="
-    absolute top-4 right-5 z-20
-    flex items-center justify-center
-    w-10 h-10
-    rounded-full
-    bg-black/60
-    text-white
-    backdrop-blur-sm
-    transition-all duration-300
-    hover:bg-green-500
-    hover:scale-110
-  "
->
-  <X size={22} />
-</button>
+  <div className="fixed inset-0 bg-black/70 flex items-center justify-center z-50 p-4 md:p-6">
+  <div className="bg-slate-900 rounded-2xl w-full max-w-7xl max-h-[95vh] overflow-hidden relative">
 
-            <div className="relative bg-slate-800">
-              <img
-                src={selectedProject.images[currentImage]}
-                alt={selectedProject.title}
-className="w-full h-auto object-contain"
-              />
+    {/* Botón cerrar */}
+    <button
+      onClick={() => {
+        setSelectedProject(null);
+        setCurrentImage(0);
+      }}
+      className="
+        absolute top-4 right-5 z-30
+        flex items-center justify-center
+        w-10 h-10
+        rounded-full
+        bg-black/60
+        text-white
+        backdrop-blur-sm
+        transition-all duration-300
+        hover:bg-green-500
+        hover:scale-110
+      "
+    >
+      <X size={22} />
+    </button>
 
-              <button
-          onClick={() =>
-  setCurrentImage((prev) =>
-    prev === 0
-      ? selectedProject.images.length - 1
-      : prev - 1
-  )
-}
-                className="absolute left-5 top-1/2 -translate-y-1/2 bg-black/60 hover:bg-green-600 text-white w-12 h-12 rounded-full"
-              >
-                ❮
-              </button>
+    <div className="flex flex-col lg:flex-row h-full">
 
-              <button
-                onClick={() =>
-                  setCurrentImage(
-                    currentImage === selectedProject.images.length - 1
-                      ? 0
-                      : currentImage + 1,
-                  )
-                }
-                className="absolute right-5 top-1/2 -translate-y-1/2 bg-black/60 hover:bg-green-600 text-white w-12 h-12 rounded-full"
-              >
-                ❯
-              </button>
-            </div>
-            <div className="flex justify-center gap-3 py-5">
-              {selectedProject.images.map((_, index) => (
-                <button
-                  key={index}
-                  onClick={() => setCurrentImage(index)}
-                  className={`w-3 h-3 rounded-full ${
-                    currentImage === index ? "bg-green-500" : "bg-gray-500"
-                  }`}
-                />
-              ))}
-            </div>
+      {/* Descripción - 40% */}
+      <div className="w-full lg:w-[40%] p-8 overflow-y-auto">
+        <h3 className="text-3xl font-bold text-white mb-6">
+          {selectedProject.title}
+        </h3>
 
-            <div className="p-8">
-              <h3 className="text-3xl font-bold text-white">
-                {selectedProject.title}
-              </h3>
+        <div
+          className="text-gray-300 leading-8"
+          dangerouslySetInnerHTML={{
+            __html: selectedProject.description,
+          }}
+        />
 
-           <p
-  className="text-gray-300 mt-5 leading-8"
-  dangerouslySetInnerHTML={{
-    __html: selectedProject.description,
-  }}
-/>
-            </div>
-          </div>
+        {/* Indicadores */}
+        <div className="flex gap-3 mt-8">
+          {selectedProject.images.map((_, index) => (
+            <button
+              key={index}
+              onClick={() => setCurrentImage(index)}
+              className={`w-3 h-3 rounded-full transition ${
+                currentImage === index
+                  ? "bg-green-500"
+                  : "bg-gray-500 hover:bg-gray-400"
+              }`}
+            />
+          ))}
         </div>
+      </div>
+
+      {/* Imagen - 60% */}
+   <div className="relative w-full lg:w-[60%] bg-slate-800 overflow-y-auto max-h-[95vh]">
+  <img
+    src={selectedProject.images[currentImage]}
+    alt={selectedProject.title}
+    className="w-full h-auto"
+  />
+        {/* Flecha izquierda */}
+        <button
+          onClick={() =>
+            setCurrentImage((prev) =>
+              prev === 0
+                ? selectedProject.images.length - 1
+                : prev - 1
+            )
+          }
+          className="
+            absolute left-5 top-1/2 -translate-y-1/2
+            bg-black/60 hover:bg-green-600
+            text-white w-12 h-12 rounded-full
+            transition
+          "
+        >
+          ❮
+        </button>
+
+        {/* Flecha derecha */}
+        <button
+          onClick={() =>
+            setCurrentImage(
+              currentImage === selectedProject.images.length - 1
+                ? 0
+                : currentImage + 1
+            )
+          }
+          className="
+            absolute right-5 top-1/2 -translate-y-1/2
+            bg-black/60 hover:bg-green-600
+            text-white w-12 h-12 rounded-full
+            transition
+          "
+        >
+          ❯
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
       )}
     </section>
   );
