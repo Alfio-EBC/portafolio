@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { X } from "lucide-react";
 
 import biotablero from "../imagenes/biotablero.png";
 import biotablerodos from "../imagenes/biotablerodos.jpg";
@@ -137,15 +138,26 @@ description: "El Portal de Proyección Académica fue un proyecto interno desarr
       {selectedProject && (
         <div className="fixed inset-0 bg-black/70 flex items-center justify-center z-50 p-6">
           <div className="bg-slate-900 rounded-2xl max-w-6xl w-full max-h-[95vh] overflow-auto relative">
-            <button
-              onClick={() => {
-                setSelectedProject(null);
-                setCurrentImage(0);
-              }}
-             className="absolute top-4 right-5 z-20 bg-white"
-            >
-              ×
-            </button>
+   <button
+  onClick={() => {
+    setSelectedProject(null);
+    setCurrentImage(0);
+  }}
+  className="
+    absolute top-4 right-5 z-20
+    flex items-center justify-center
+    w-10 h-10
+    rounded-full
+    bg-black/60
+    text-white
+    backdrop-blur-sm
+    transition-all duration-300
+    hover:bg-green-500
+    hover:scale-110
+  "
+>
+  <X size={22} />
+</button>
 
             <div className="relative bg-slate-800">
               <img
