@@ -39,7 +39,7 @@ function Header() {
               <li key={link.name}>
                 <a
                   href={link.href}
-                  className="font-medium text-white hover:text-blue-600 transition-colors"
+                  className="font-medium text-white hover:text-green-600 transition-colors"
                 >
                   {link.name}
                 </a>

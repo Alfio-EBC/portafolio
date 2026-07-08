@@ -33,7 +33,7 @@ function Skills() {
   return (
     <section
       id="skills"
-      className="min-h-screen flex flex-col items-center justify-center py-20"
+      className="min-h-screen flex flex-col items-center justify-center py-20 container mx-auto px-6"
     >
       <h2 className="text-5xl font-bold mb-14 text-white">
         Habilidades

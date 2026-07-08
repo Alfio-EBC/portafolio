@@ -10,29 +10,12 @@ function Experience() {
         </h2>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+   
           <a
        
             className="bg-[#] border border-white rounded-xl p-6 shadow-lg hover:border-green-400 hover:-translate-y-2 transition-all duration-300"
           >
-            <h3 className="text-2xl font-semibold text-white mb-4">
-              Instituto Humboldt
-            </h3>
-
-            <p className="text-gray-300 leading-7">
-              <strong>Jefe:</strong> Helena Olaya
-              <br />
-              <strong>Cargo:</strong> Diseñador Web UI/UX
-              <br />
-              Prototipado y maquetación.
-              <br />
-              <strong>Periodo:</strong> 02 de diciembre de 2024 - 01 de octubre.
-            </p>
-          </a>
-          <a
-       
-            className="bg-[#] border border-white rounded-xl p-6 shadow-lg hover:border-green-400 hover:-translate-y-2 transition-all duration-300"
-          >
-            <h3 className="text-2xl font-semibold text-white mb-4">
+            <h3 className="text-2xl font-semibold text-green-500  mb-4">
               Instituto Humboldt
             </h3>
             <p className="text-gray-300 leading-7">
@@ -42,7 +25,7 @@ function Experience() {
               <br />
               Prototipado y maquetación.
               <br />
-              <strong>Periodo:</strong> 02 de diciembre de 2024 - 01 de octubre.
+              <strong>Periodo:</strong> 02 de diciembre de 2024 - 01 de octubre.<br></br>
               <strong>Telefono:</strong>316 692 16 62
             </p>
           </a>
@@ -50,7 +33,7 @@ function Experience() {
        
             className="bg-[#] border border-white rounded-xl p-6 shadow-lg hover:border-green-400 hover:-translate-y-2 transition-all duration-300"
           >
-            <h3 className="text-2xl font-semibold text-white mb-4">
+            <h3 className="text-2xl font-semibold text-green-500  mb-4">
               Universidad del Rosario
             </h3>
             <p className="text-gray-300 leading-7">
@@ -59,7 +42,7 @@ function Experience() {
               <strong>Cargo:</strong> diseñador web UI/UX y maquetador Drupal
               <br />
               <strong>Trabaje:</strong> desde el 19 de agosto del 2019, trabajo
-              actual.
+              actual.<br></br>
               <strong>Telefono:</strong>312 589 92 61
             </p>
           </a>
@@ -67,7 +50,7 @@ function Experience() {
        
             className="bg-[#] border border-white rounded-xl p-6 shadow-lg hover:border-green-400 hover:-translate-y-2 transition-all duration-300"
           >
-            <h3 className="text-2xl font-semibold text-white mb-4">
+            <h3 className="text-2xl font-semibold text-green-500  mb-4">
               AuditBrain
             </h3>
             <p className="text-gray-300 leading-7">
@@ -77,14 +60,14 @@ function Experience() {
               Prestashop
               <br />
               <strong>Trabaje:</strong> desde el 3 de agosto del 2018 hasta el
-              30 septiembre del 2018 <strong>Telefono:</strong> Tel: 755 27 55
+              30 septiembre del 2018<br></br> <strong>Telefono:</strong> Tel: 755 27 55
             </p>
           </a>
           <a
        
             className="bg-[#] border border-white rounded-xl p-6 shadow-lg hover:border-green-400 hover:-translate-y-2 transition-all duration-300"
           >
-            <h3 className="text-2xl font-semibold text-white mb-4">
+            <h3 className="text-2xl font-semibold text-green-500  mb-4">
               Sainet Ingeniería
             </h3>
             <p className="text-gray-300 leading-7">
@@ -94,14 +77,14 @@ function Experience() {
               Prestashop
               <br />
               <strong>Trabaje:</strong> desde el 3 de agosto del 2018 hasta el
-              30 septiembre del 2018 <strong>Telefono:</strong> 755 27 55
+              30 septiembre del 2018 <br></br><strong>Telefono:</strong> 755 27 55
             </p>
           </a>
           <a
        
             className="bg-[#] border border-white rounded-xl p-6 shadow-lg hover:border-green-400 hover:-translate-y-2 transition-all duration-300"
           >
-            <h3 className="text-2xl font-semibold text-white mb-4">
+            <h3 className="text-2xl font-semibold text-green-500  mb-4">
               Novoclick.com
             </h3>
             <p className="text-gray-300 leading-7">
@@ -111,7 +94,7 @@ function Experience() {
               marketing
               <br />
               <strong>Trabaje:</strong> desde el 14 de octubre del 2014 hasta el
-              20 abril del 2018 <strong>Telefono:</strong> 613 08 00
+              20 abril del 2018 <br></br><strong>Telefono:</strong> 613 08 00
               <strong>Celular:</strong> 38413 00 / 384 13 13
             </p>
           </a>
@@ -119,7 +102,7 @@ function Experience() {
        
             className="bg-[#] border border-white rounded-xl p-6 shadow-lg hover:border-green-400 hover:-translate-y-2 transition-all duration-300"
           >
-            <h3 className="text-2xl font-semibold text-white mb-4">
+            <h3 className="text-2xl font-semibold text-green-500  mb-4">
               Daﬁti.com
             </h3>
             <p className="text-gray-300 leading-7">
@@ -128,14 +111,14 @@ function Experience() {
               <strong>Cargo:</strong> diseñador de piezas de email marketing
               <br />
               <strong>Trabaje:</strong> desde el 11 de junio del 2013 hasta el 2
-              agosto del 2013 <strong>Telefono:</strong> 38413 00 / 384 13 13
+              agosto del 2013 <br></br><strong>Telefono:</strong> 38413 00 / 384 13 13
             </p>
           </a>
           <a
        
             className="bg-[#] border border-white rounded-xl p-6 shadow-lg hover:border-green-400 hover:-translate-y-2 transition-all duration-300"
           >
-            <h3 className="text-2xl font-semibold text-white mb-4">
+            <h3 className="text-2xl font-semibold text-green-500  mb-4">
               Pac Gráﬁca Agencia publicitaria
             </h3>
             <p className="text-gray-300 leading-7">
@@ -144,14 +127,14 @@ function Experience() {
               <strong>Cargo:</strong> diseñador web y maquetador
               <br />
               <strong>Trabaje:</strong> desde el 23 de septiembre del 2013 hasta
-              el 5 agosto del 2014 <strong>Telefono:</strong> 3112503262
+              el 5 agosto del 2014 <br></br><strong>Telefono:</strong> 3112503262
             </p>
           </a>
           <a
        
             className="bg-[#] border border-white rounded-xl p-6 shadow-lg hover:border-green-400 hover:-translate-y-2 transition-all duration-300"
           >
-            <h3 className="text-2xl font-semibold text-white mb-4">
+            <h3 className="text-2xl font-semibold text-green-500  mb-4">
               Ideea Soluciones Ltda.
             </h3>
             <p className="text-gray-300 leading-7">
@@ -160,14 +143,14 @@ function Experience() {
               <strong>Cargo:</strong> maquetador y diseñador freelance
               <br />
               <strong>Trabaje:</strong> desde el 5 de septiembre del 2012 hasta
-              el 10 octubre del 2013 <strong>Telefono:</strong> (571) 4321931
+              el 10 octubre del 2013 <br></br><strong>Telefono:</strong> (571) 4321931
             </p>
           </a>
           <a
        
             className="bg-[#] border border-white rounded-xl p-6 shadow-lg hover:border-green-400 hover:-translate-y-2 transition-all duration-300"
           >
-            <h3 className="text-2xl font-semibold text-white mb-4">
+            <h3 className="text-2xl font-semibold text-green-500  mb-4">
               Calzado Caprino - Imacal Ltda
             </h3>
             <p className="text-gray-300 leading-7">
@@ -176,14 +159,14 @@ function Experience() {
               <strong>Cargo:</strong> diseñador de piezas de email marketing
               <br />
               <strong>Trabaje:</strong> desde el 16 de julio del 2012 hasta el 3
-              junio del 2013 <strong>Telefono:</strong> 3701266 ext 116
+              junio del 2013 <br></br><strong>Telefono:</strong> 3701266 ext 116
             </p>
           </a>
           <a
        
             className="bg-[#] border border-white rounded-xl p-6 shadow-lg hover:border-green-400 hover:-translate-y-2 transition-all duration-300"
           >
-            <h3 className="text-2xl font-semibold text-white mb-4">
+            <h3 className="text-2xl font-semibold text-green-500  mb-4">
               Directorio virtual publicitario s.a.s
             </h3>
             <p className="text-gray-300 leading-7">
@@ -192,7 +175,7 @@ function Experience() {
               <strong>Cargo:</strong> diseñador y maquetador web freelance
               <br />
               <strong>Trabaje:</strong> desde el 11 de mayo del 2011 hasta el 3
-              marzo del 2012 <strong>Telefono:</strong> 367 7470 - 320 326 5859
+              marzo del 2012 <br></br><strong>Telefono:</strong> 367 7470 - 320 326 5859
               - 301 273 9085
             </p>
           </a>

@@ -1,13 +1,18 @@
 function Footer() {
   return (
-    <section
-      id="contact"
-      className="min-h-screen flex items-center justify-center"
-    >
-      <h2 className="text-5xl font-bold">
-        Footer
-      </h2>
-    </section>
+    <footer className="bg-slate-950 border-t border-slate-800 py-8">
+      <div className="container mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-4">
+
+        <p className="text-gray-400 text-center md:text-left">
+          © 2026 Todos los derechos reservados.
+        </p>
+
+        <h3 className="text-white font-semibold">
+          Efren <span className="text-green-500">Barragán</span>
+        </h3>
+
+      </div>
+    </footer>
   );
 }
 

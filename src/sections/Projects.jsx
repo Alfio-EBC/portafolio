@@ -1,147 +1,211 @@
 import { useState } from "react";
 
+import biotablero from "../imagenes/biotablero.png";
+import biotablerodos from "../imagenes/biotablerodos.jpg";
+import biotablerotres from "../imagenes/biotablerotres.jpg";
+import biotablerocuatro from "../imagenes/biotablerocuatro.jpg";
+import biotablerocinco from "../imagenes/biotablerocinco.jpg";
+
+
+
+import restauracion from "../imagenes/portal-restauracion.png";
+
+
+import portalestudintesuno from "../imagenes/portalestudintesuno.jpg";
+import portalestudintesunocargando from "../imagenes/portalestudintesunocargando.jpg";
+import urosario from "../imagenes/portalestudintes.jpg";
+import urosarioslidedos from "../imagenes/portaldeestuduantesdos.jpg";
+import urosarioslidetres from "../imagenes/urosarioslidetres.jpg";
+import urosarioslidecuatro from "../imagenes/urosarioslidecuatro.jpg";
+
+
+import cafe from "../imagenes/dashboard-cafe.jpg";
+import cafedos from "../imagenes/dashboard-cafe-dos.jpg";
+import cafetres from "../imagenes/dashboard-cafe-tres.jpg";
+
+
+
+import atomic from "../imagenes/atomic-frenchiez.jpg";
+import menciones from "../imagenes/menciones.png";
+import mencionesdos from "../imagenes/menciones-odal.png";
+
+
+
+
 function Projects() {
   const [selectedProject, setSelectedProject] = useState(null);
+  const [currentImage, setCurrentImage] = useState(0);
 
   const projects = [
-    {
-      title: "E-commerce Redesign",
-      image: "/images/ecommerce.jpg",
-      short: "Modern shopping experience.",
-      description:
-        "Complete redesign of an e-commerce platform focused on usability, accessibility, responsive design, user flows, wireframes, and high-fidelity prototypes created in Figma.",
-    },
-    {
-      title: "Banking Mobile App",
-      image: "/images/banking.jpg",
-      short: "Mobile banking experience.",
-      description:
-        "Designed an intuitive banking application with simplified navigation, interactive prototypes, and accessibility improvements for all users.",
-    },
-    {
-      title: "Healthcare Dashboard",
-      image: "/images/healthcare.jpg",
-      short: "Medical dashboard.",
-      description:
-        "Responsive dashboard designed for healthcare professionals with data visualization, user research, and usability testing.",
-    },
-    {
-      title: "Education Platform",
-      image: "/images/education.jpg",
-      short: "Learning platform.",
-      description:
-        "UX research, information architecture, and responsive interfaces for an online education platform.",
-    },
-    {
-      title: "Task Manager",
-      image: "/images/tasks.jpg",
-      short: "Productivity application.",
-      description:
-        "Task management application including user journey, wireframes, design system, and interactive prototypes.",
-    },
-    {
-      title: "Corporate Website",
-      image: "/images/corporate.jpg",
-      short: "Responsive website.",
-      description:
-        "Corporate website focused on branding, accessibility, responsive layouts, and improving the customer experience.",
-    },
+ {
+  title: "BioTablero",
+  cardImage: biotablero,
+  images: [biotablero,biotablerotres,  biotablerodos, biotablerocuatro, biotablerocinco ],
+  short: "Cifras e indicadores sobre biodiversidad.",
+  description: "..."
+},
+ {
+  title: "Portal de restauración",
+  cardImage: restauracion,
+  images: [restauracion],
+  short: "Herramineta de consulta de proyectos de restauración.",
+  description: "El Portal Restauración nació como una iniciativa orientada a crear una plataforma digital que reuniera las diferentes acciones e iniciativas de monitoreo de las zonas restauradas en Colombia. Su principal objetivo fue centralizar la información y facilitar el acceso a datos relevantes sobre los procesos de restauración ecológica en el país. La plataforma cuenta con una sección dedicada a visibilizar a los líderes y organizaciones restauradoras de Colombia, destacando su trabajo y contribución a la conservación y recuperación de los ecosistemas. Además, integra contenido educativo, publicaciones y documentos relacionados con la restauración ambiental, convirtiéndose en un espacio de consulta y difusión de conocimiento. <br>  <br> El proyecto se desarrolló bajo una metodología de diseño centrado en el usuario, realizando un proceso de investigación con potenciales usuarios y stakeholders para comprender sus necesidades, expectativas y puntos de dolor. A partir de estos hallazgos, se definieron los flujos de navegación, la arquitectura de información y las funcionalidades de la plataforma. Durante el proceso se aplicaron principios de accesibilidad y diseño de interfaces de usuario (UI), garantizando una experiencia intuitiva, inclusiva y fácil de usar para diferentes tipos de usuarios. El resultado fue una plataforma que no solo facilita el acceso a la información sobre restauración ecológica, sino que también promueve la colaboración y la difusión del conocimiento en torno a la conservación ambiental."
+},
+{
+  title: "Universidad del Rosario",
+  cardImage: urosario,
+  images: [portalestudintesuno, portalestudintesunocargando, urosario, urosarioslidedos, urosarioslidetres, urosarioslidecuatro],
+  short: "Portal de Proyección Académica.",
+description: "El Portal de Proyección Académica fue un proyecto interno desarrollado para la Universidad del Rosario.El proyecto inició con un análisis de las problemáticas que enfrentaban los estudiantes al momento de realizar el seguimiento y control de sus asignaturas y materias de apoyo durante su trayectoria académica- Como parte de la fase de investigación, se realizaron entrevistas con un grupo de estudiantes y con el área de Dirección Académica, con el objetivo de identificar las principales necesidades y comprender el estado de las materias a lo largo de la carrera.A partir de los hallazgos obtenidos, se diseñaron wireframes en conjunto con el equipo de trabajo para definir las funcionalidades que tendría el portal. Posteriormente, se desarrolló un prototipo de alta fidelidad que fue presentado a la Dirección Académica para su validación y aprobación.<br><br> Después de la aprobación, se realizó una nueva ronda de pruebas con estudiantes para evaluar el impacto y la utilidad de la solución propuesta, validando que la plataforma respondiera a las necesidades identificadas en la investigación inicial. Finalmente, se inició la fase de desarrollo e implementación del dashboard, utilizando React para la construcción de la interfaz y consumiendo la información a través de una API, permitiendo centralizar y visualizar de manera eficiente el progreso académico de los estudiantes.",
+ },
+{
+  title: "Universidad del Rosario",
+  cardImage: menciones,
+  images: [menciones,mencionesdos],
+  short: "Opciones de profundización académica.",
+  description: "Opciones de profundización académica."
+},
+ {
+  title: "Cafe conecta",
+  cardImage: cafe,
+  images: [cafe, cafedos, cafetres ],
+  short: "Dashboard de cafe.",
+  description: "..."
+},
+ {
+  title: "Atomic Frenchiez",
+  cardImage: atomic,
+  images: [atomic],
+  short: "Especialistas en cachorros Bulldog Francés saludables.",
+  description: "..."
+},
+
+
   ];
 
   return (
-    <section
-      id="projects"
-      className="py-24 "
-    >
-     <div className="container mx-auto px-6">
-
-
+    <section id="projects" className="py-24 ">
+      <div className="container mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="text-5xl font-bold text-white">
-            Featured Projects
+            Proyectos <span className="text-green-500">destacados</span>
           </h2>
 
           <p className="text-gray-400 mt-4 max-w-3xl mx-auto">
-            Selected UI/UX projects focused on creating accessible,
-            user-centered, and visually engaging digital experiences.
+            Proyectos de diseño UI/UX que combinan investigación, estrategia y
+            diseño visual para crear experiencias digitales funcionales,
+            accesibles y atractivas.
           </p>
         </div>
 
         <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-
           {projects.map((project, index) => (
             <div
               key={index}
-              className="bg-slate-900 rounded-2xl overflow-hidden border border-slate-800 hover:border-blue-500 transition duration-300 hover:-translate-y-2"
+              className="bg-slate-900 rounded-2xl overflow-hidden border border-slate-800 hover:border-green-500 transition duration-300 hover:-translate-y-2"
             >
               <img
-                src={project.image}
+                src={project.cardImage}
                 alt={project.title}
-                className="w-full h-56 object-cover"
+                className="w-full h-56 object-cover object-top"
               />
-
               <div className="p-6">
-
                 <h3 className="text-2xl font-semibold text-white">
                   {project.title}
                 </h3>
 
-                <p className="text-gray-400 mt-3">
-                  {project.short}
-                </p>
+                <p className="text-gray-400 mt-3">{project.short}</p>
 
                 <button
-                  onClick={() => setSelectedProject(project)}
-                  className="mt-6 bg-blue-600 hover:bg-blue-700 px-5 py-2 rounded-lg text-white transition"
+                  onClick={() => {
+                    setSelectedProject(project);
+                    setCurrentImage(0);
+                  }}
+                  className="mt-6 bg-green-600 hover:bg-green-700 px-5 py-2 rounded-lg text-white transition"
                 >
-                  View Project
+                  Ver más
                 </button>
-
               </div>
             </div>
           ))}
-
         </div>
-
       </div>
 
       {/* Modal */}
 
       {selectedProject && (
         <div className="fixed inset-0 bg-black/70 flex items-center justify-center z-50 p-6">
-
-          <div className="bg-slate-900 rounded-2xl max-w-4xl w-full overflow-hidden relative">
-
+          <div className="bg-slate-900 rounded-2xl max-w-6xl w-full max-h-[95vh] overflow-auto relative">
             <button
-              onClick={() => setSelectedProject(null)}
-              className="absolute top-4 right-5 text-white text-3xl"
+              onClick={() => {
+                setSelectedProject(null);
+                setCurrentImage(0);
+              }}
+             className="absolute top-4 right-5 z-20 bg-white"
             >
               ×
             </button>
 
-            <img
-              src={selectedProject.image}
-              alt={selectedProject.title}
-              className="w-full h-[450px] object-cover"
-            />
+            <div className="relative bg-slate-800">
+              <img
+                src={selectedProject.images[currentImage]}
+                alt={selectedProject.title}
+className="w-full h-auto object-contain"
+              />
+
+              <button
+          onClick={() =>
+  setCurrentImage((prev) =>
+    prev === 0
+      ? selectedProject.images.length - 1
+      : prev - 1
+  )
+}
+                className="absolute left-5 top-1/2 -translate-y-1/2 bg-black/60 hover:bg-green-600 text-white w-12 h-12 rounded-full"
+              >
+                ❮
+              </button>
+
+              <button
+                onClick={() =>
+                  setCurrentImage(
+                    currentImage === selectedProject.images.length - 1
+                      ? 0
+                      : currentImage + 1,
+                  )
+                }
+                className="absolute right-5 top-1/2 -translate-y-1/2 bg-black/60 hover:bg-green-600 text-white w-12 h-12 rounded-full"
+              >
+                ❯
+              </button>
+            </div>
+            <div className="flex justify-center gap-3 py-5">
+              {selectedProject.images.map((_, index) => (
+                <button
+                  key={index}
+                  onClick={() => setCurrentImage(index)}
+                  className={`w-3 h-3 rounded-full ${
+                    currentImage === index ? "bg-green-500" : "bg-gray-500"
+                  }`}
+                />
+              ))}
+            </div>
 
             <div className="p-8">
-
               <h3 className="text-3xl font-bold text-white">
                 {selectedProject.title}
               </h3>
 
-              <p className="text-gray-300 mt-5 leading-8">
-                {selectedProject.description}
-              </p>
-
+           <p
+  className="text-gray-300 mt-5 leading-8"
+  dangerouslySetInnerHTML={{
+    __html: selectedProject.description,
+  }}
+/>
             </div>
-
           </div>
-
         </div>
       )}
-
     </section>
   );
 }
