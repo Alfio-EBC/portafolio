@@ -26,7 +26,7 @@ function Experience() {
               Prototipado y maquetación.
               <br />
               <strong>Periodo:</strong> 02 de diciembre de 2024 - 01 de octubre.<br></br>
-              <strong>Telefono:</strong>316 692 16 62
+              <strong>Telefono:</strong> 316 692 16 62
             </p>
           </a>
           <a
@@ -43,7 +43,7 @@ function Experience() {
               <br />
               <strong>Trabaje:</strong> desde el 19 de agosto del 2019, trabajo
               actual.<br></br>
-              <strong>Telefono:</strong>312 589 92 61
+              <strong>Telefono:</strong> 312 589 92 61
             </p>
           </a>
           <a
@@ -90,11 +90,11 @@ function Experience() {
             <p className="text-gray-300 leading-7">
               <strong>Jefe:</strong> Wendy Franco
               <br />
-              <strong>Cargo:</strong> diseñador web y diseñador de campañas de
-              marketing
+              <strong>Cargo:</strong> diseñador web, diseñador de campañas de
+              marketing 360
               <br />
               <strong>Trabaje:</strong> desde el 14 de octubre del 2014 hasta el
-              20 abril del 2018 <br></br><strong>Telefono:</strong> 613 08 00
+              20 abril del 2018 <br></br><strong>Telefono:</strong> 613 08 00<br></br>
               <strong>Celular:</strong> 38413 00 / 384 13 13
             </p>
           </a>
