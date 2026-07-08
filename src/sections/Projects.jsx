@@ -42,7 +42,7 @@ function Projects() {
   cardImage: biotablero,
   images: [biotablero,biotablerotres,  biotablerodos, biotablerocuatro, biotablerocinco ],
   short: "Cifras e indicadores sobre biodiversidad.",
-  description: "..."
+  description: "El proyecto se enfocó en el diseño y desarrollo de la plataforma BioTablero desde una perspectiva de experiencia de usuario (UX) y diseño de interfaces (UI), priorizando la investigación de usuarios, la accesibilidad y el diseño centrado en las personas. Para ello, se realizó un proceso de investigación con usuarios, comunidades y stakeholders para identificar necesidades, comportamientos, puntos de dolor y oportunidades de mejora en la interacción con la plataforma.<br><br>La participación de las comunidades permitió comprender sus dinámicas, necesidades de información y expectativas frente a la herramienta, garantizando que las soluciones propuestas respondieran a contextos reales y promovieran una experiencia más inclusiva y participativa. A partir de los hallazgos obtenidos, se definió una arquitectura de información clara, flujos de navegación intuitivos y un sistema de interfaces accesibles y responsivas, alineadas con principios de usabilidad y estándares de accesibilidad digital.<br><br>El objetivo fue diseñar una solución que facilite la consulta, gestión y visualización de la información, ofreciendo una experiencia inclusiva, eficiente y de fácil uso para las comunidades, investigadores, entidades y demás actores vinculados a BioTablero."
 },
  {
   title: "Portal de restauración",
@@ -63,21 +63,22 @@ description: "El Portal de Proyección Académica fue un proyecto interno desarr
   cardImage: menciones,
   images: [menciones,mencionesdos],
   short: "Opciones de profundización académica.",
-  description: "Opciones de profundización académica."
+  description: "El proyecto de profundización académica tuvo como objetivo fortalecer las competencias en el diseño de experiencias de usuario (UX) y diseño de interfaces de usuario (UI), mediante la aplicación de metodologías centradas en las personas, investigación de usuarios y el desarrollo de soluciones digitales accesibles e intuitivas.<br> La propuesta busca analizar las necesidades y comportamientos de los usuarios para identificar oportunidades de mejora en productos y servicios digitales. A partir de ello, se implementarán procesos de investigación, definición de problemas, creación de prototipos, pruebas de usabilidad y validación de soluciones, siguiendo metodologías de diseño como Design Thinking y Human-Centered Design."
 },
  {
   title: "Cafe conecta",
   cardImage: cafe,
   images: [cafe, cafedos, cafetres ],
   short: "Dashboard de cafe.",
-  description: "..."
+  description: "El proyecto se enfocará en comprender el ecosistema cafetero desde una perspectiva de negocio, experiencia de usuario (UX) y diseño de interfaces (UI), integrando la investigación de mercados y la participación de los stakeholders para identificar las necesidades, comportamientos y expectativas de los diferentes actores de la cadena del café. A partir de estos hallazgos, se diseñará una solución digital centrada en el usuario, con interfaces intuitivas, accesibles y funcionales, que genere valor para productores, consumidores, comercializadores y demás participantes del sector cafetero."
 },
  {
   title: "Atomic Frenchiez",
   cardImage: atomic,
   images: [atomic],
   short: "Especialistas en cachorros Bulldog Francés saludables.",
-  description: "..."
+  description: "El proyecto se enfocará en el diseño y desarrollo del landing page de Atomic Frenchiez desde una perspectiva de negocio, experiencia de usuario (UX) y diseño de interfaces (UI). Para ello, se realizará una investigación de mercado que permita comprender las necesidades, comportamientos y expectativas de los potenciales clientes, inversionistas y demás stakeholders interesados en el modelo de franquicia.<br><br>Los hallazgos obtenidos servirán como base para diseñar una experiencia digital centrada en el usuario, mediante una arquitectura de información clara, contenidos estratégicos y una interfaz intuitiva, accesible y responsiva. El objetivo es crear un landing page que fortalezca la presencia de la marca, comunique efectivamente su propuesta de valor y facilite la captación de nuevos interesados en la franquicia.",
+
 },
 
 
