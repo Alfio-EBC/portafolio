@@ -5,6 +5,7 @@ import biotablerodos from "../imagenes/biotablerodos.jpg";
 import biotablerotres from "../imagenes/biotablerotres.jpg";
 import biotablerocuatro from "../imagenes/biotablerocuatro.jpg";
 import biotablerocinco from "../imagenes/biotablerocinco.jpg";
+import biotableroseis from "../imagenes/biotableroseis.jpg";
 
 import restauracion from "../imagenes/portal-restauracion.png";
 
@@ -37,6 +38,7 @@ function Projects() {
         biotablerodos,
         biotablerocuatro,
         biotablerocinco,
+        biotableroseis,
       ],
       short: "Cifras e indicadores sobre biodiversidad.",
       description:
@@ -139,8 +141,6 @@ function Projects() {
         </div>
       </div>
 
-      {/* Modal */}
-
       {selectedProject && (
         <div className="fixed inset-0 bg-black/80 flex items-center justify-center z-50 p-2 sm:p-4 md:p-6 backdrop-blur-sm">
           <div className="bg-slate-900 rounded-2xl w-full max-w-7xl max-h-[92vh] sm:max-h-[95vh] flex flex-col overflow-hidden relative">
@@ -166,15 +166,13 @@ function Projects() {
               <X size={20} />
             </button>
 
-            {/* Contenedor principal: Cambia de columna a fila en pantallas grandes */}
             <div className="flex flex-col lg:flex-row flex-1 overflow-hidden">
-              {/* Contenedor Imagen - Pegado al top con scroll vertical */}
               <div class="relative w-full lg:w-[60%] bg-slate-800 overflow-y-auto max-h-[95vh]">
                 {" "}
                 <img
                   src={selectedProject.images[currentImage]}
                   alt={selectedProject.title}
-         class="w-full h-auto"
+                  class="w-full h-auto"
                 />
                 {/* Flecha izquierda */}
                 <button
@@ -212,8 +210,7 @@ function Projects() {
                 </button>
               </div>
 
-              {/* Descripción - Abajo en móviles, scroll independiente */}
-              <div className="w-full lg:w-[40%] p-5 sm:p-8 overflow-y-auto flex flex-col justify-between order-2 lg:order-1 flex-1">
+              <div className="w-full lg:w-[40%] p-5 sm:p-8 overflow-y-auto flex flex-col justify-between order-2 lg:order-2 flex-1">
                 <div>
                   <h3 className="text-2xl sm:text-3xl font-bold text-white mb-4 pr-10 lg:pr-0">
                     {selectedProject.title}
@@ -227,7 +224,6 @@ function Projects() {
                   />
                 </div>
 
-                {/* Indicadores de imágenes */}
                 <div className="flex flex-wrap gap-2 mt-6 pb-2">
                   {selectedProject.images.map((_, index) => (
                     <button
