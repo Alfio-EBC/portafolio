@@ -16,9 +16,17 @@ import urosarioslidedos from "../imagenes/portaldeestuduantesdos.jpg";
 import urosarioslidetres from "../imagenes/urosarioslidetres.jpg";
 import urosarioslidecuatro from "../imagenes/urosarioslidecuatro.jpg";
 
-import cafe from "../imagenes/dashboard-cafe.jpg";
-import cafedos from "../imagenes/dashboard-cafe-dos.jpg";
-import cafetres from "../imagenes/dashboard-cafe-tres.jpg";
+import cafe from "../imagenes/plan-de-trabajo.png";
+import cafedos from "../imagenes/plan-de-trabajo-dos.png";
+import cafetres from "../imagenes/plan-de-trabajo-tres.png";
+import cafecuatro from "../imagenes/plan-de-trabajo-cuatro.png";
+import cafecinco from "../imagenes/plan-de-trabajo-cinco.png";
+import cafeseis from "../imagenes/plan-de-trabajo-seis.png";
+import cafesiete from "../imagenes/plan-de-trabajo-siete.png";
+import cafesocho from "../imagenes/plan-de-trabajo-ocho.png";
+import cafenueve from "../imagenes/plan-de-trabajo-nueve.png";
+import cafediez from "../imagenes/plan-de-trabajo-diez.png";
+
 
 import atomic from "../imagenes/atomic-frenchiez.jpg";
 import menciones from "../imagenes/menciones.png";
@@ -52,6 +60,14 @@ function Projects() {
       description:
         "El Portal Restauración nació como una iniciativa orientada a crear una plataforma digital que reuniera las diferentes acciones e iniciativas de monitoreo de las zonas restauradas en Colombia. Su principal objetivo fue centralizar la información y facilitar el acceso a datos relevantes sobre los procesos de restauración ecológica en el país. La plataforma cuenta con una sección dedicada a visibilizar a los líderes y organizaciones restauradoras de Colombia, destacando su trabajo y contribución a la conservación y recuperación de los ecosistemas. Además, integra contenido educativo, publicaciones y documentos relacionados con la restauración ambiental, convirtiéndose en un espacio de consulta y difusión de conocimiento. <br>  <br> El proyecto se desarrolló bajo una metodología de diseño centrado en el usuario, realizando un proceso de investigación con potenciales usuarios y stakeholders para comprender sus necesidades, expectativas y puntos de dolor. A partir de estos hallazgos, se definieron los flujos de navegación, la arquitectura de información y las funcionalidades de la plataforma. Durante el proceso se aplicaron principios de accesibilidad y diseño de interfaces de usuario (UI), garantizando una experiencia intuitiva, inclusiva y fácil de usar para diferentes tipos de usuarios. El resultado fue una plataforma que no solo facilita el acceso a la información sobre restauración ecológica, sino que también promueve la colaboración y la difusión del conocimiento en torno a la conservación ambiental.",
     },
+            {
+      title: "Portal SiB Colombia",
+      cardImage: cafe,
+      images: [cafe, cafedos, cafetres,cafecuatro, cafecinco,cafeseis,cafesiete,cafesocho,cafenueve, cafediez ],
+      short: "Plataforma de biodiversidad.",
+      description:
+        "El proyecto se enfocará en comprender el ecosistema de SiB Colombia desde una perspectiva de negocio, experiencia de usuario (UX) y diseño de interfaces (UI), integrando la investigación de usuarios y la participación de los stakeholders para identificar las necesidades, comportamientos y expectativas de los diferentes actores que interactúan con la plataforma. A partir de estos hallazgos, se diseñará una solución digital centrada en el usuario, con interfaces intuitivas, accesibles y funcionales, que fortalezca el acceso, la gestión y el intercambio de información sobre biodiversidad, generando valor para investigadores, entidades gubernamentales, organizaciones ambientales, instituciones académicas, ciudadanos y demás participantes vinculados a SiB Colombia.",
+    },
     {
       title: "Universidad del Rosario",
       cardImage: urosario,
@@ -67,6 +83,7 @@ function Projects() {
       description:
         "El Portal de Proyección Académica fue un proyecto interno desarrollado para la Universidad del Rosario.El proyecto inició con un análisis de las problemáticas que enfrentaban los estudiantes al momento de realizar el seguimiento y control de sus asignaturas y materias de apoyo durante su trayectoria académica- Como parte de la fase de investigación, se realizaron entrevistas con un grupo de estudiantes y con el área de Dirección Académica, con el objetivo de identificar las principales necesidades y comprender el estado de las materias a lo largo de la carrera.A partir de los hallazgos obtenidos, se diseñaron wireframes en conjunto con el equipo de trabajo para definir las funcionalidades que tendría el portal. Posteriormente, se desarrolló un prototipo de alta fidelidad que fue presentado a la Dirección Académica para su validación y aprobación.<br><br> Después de la aprobación, se realizó una nueva ronda de pruebas con estudiantes para evaluar el impacto y la utilidad de la solución propuesta, validando que la plataforma respondiera a las necesidades identificadas en la investigación inicial. Finalmente, se inició la fase de desarrollo e implementación del dashboard, utilizando React para la construcción de la interfaz y consumiendo la información a través de una API, permitiendo centralizar y visualizar de manera eficiente el progreso académico de los estudiantes.",
     },
+
     {
       title: "Universidad del Rosario",
       cardImage: menciones,
@@ -75,14 +92,7 @@ function Projects() {
       description:
         "El proyecto de profundización académica tuvo como objetivo fortalecer las competencias en el diseño de experiencias de usuario (UX) y diseño de interfaces de usuario (UI), mediante la aplicación de metodologías centradas en las personas, investigación de usuarios y el desarrollo de soluciones digitales accesibles e intuitivas.<br> La propuesta busca analizar las necesidades y comportamientos de los usuarios para identificar oportunidades de mejora en productos y servicios digitales. A partir de ello, se implementarán procesos de investigación, definición de problemas, creación de prototipos, pruebas de usabilidad y validación de soluciones, siguiendo metodologías de diseño como Design Thinking y Human-Centered Design.",
     },
-    {
-      title: "Cafe conecta",
-      cardImage: cafe,
-      images: [cafe, cafedos, cafetres],
-      short: "Dashboard de cafe.",
-      description:
-        "El proyecto se enfocará en comprender el ecosistema cafetero desde una perspectiva de negocio, experiencia de usuario (UX) y diseño de interfaces (UI), integrando la investigación de mercados y la participación de los stakeholders para identificar las necesidades, comportamientos y expectativas de los diferentes actores de la cadena del café. A partir de estos hallazgos, se diseñará una solución digital centrada en el usuario, con interfaces intuitivas, accesibles y funcionales, que genere valor para productores, consumidores, comercializadores y demás participantes del sector cafetero.",
-    },
+
     {
       title: "Atomic Frenchiez",
       cardImage: atomic,
