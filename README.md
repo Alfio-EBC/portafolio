@@ -1,22 +1,87 @@
-<<<<<<< HEAD
-# portafolio
-Portafolio Efren Barragan Castillo
-=======
-# React + Vite
+# Portafolio – Efren Barragan Castillo
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+Este repositorio contiene mi portafolio profesional como **Diseñador UX/UI** y **Desarrollador Frontend**, donde presento proyectos enfocados en la creación de interfaces modernas, accesibles y centradas en el usuario.
 
-Currently, two official plugins are available:
+## Tecnologías utilizadas
 
+* React
+* Vite
+* JavaScript (ES6+)
+* HTML5
+* CSS3
+* Tailwind CSS
+* Figma
+* Git y GitHub
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Características
 
-## React Compiler
+* Diseño responsive para dispositivos móviles y escritorio.
+* Interfaz moderna y optimizada.
+* Proyectos de UX/UI con investigación de usuarios.
+* Prototipos interactivos.
+* Componentes reutilizables.
+* Enfoque en accesibilidad y experiencia de usuario.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Proyectos destacados
 
-## Expanding the Oxlint configuration
+* Plataforma de monitoreo de vehículos en tiempo real.
+* Portal de Restauración.
+* Dashboard de Café.
+* Universidad del Rosario.
+* Atomic Frenchiez.
+* Marketplace.
+* Otros proyectos de diseño UX/UI y desarrollo Frontend.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
->>>>>>> 99c611ef264d75b94836d8c009c675ea97c4b3f7
+## Ejecutar el proyecto
+
+Clona el repositorio:
+
+```bash
+git clone https://github.com/Alfio-EBC/portafolio.git
+```
+
+Ingresa al proyecto:
+
+```bash
+cd portafolio
+```
+
+Instala las dependencias:
+
+```bash
+npm install
+```
+
+Inicia el servidor de desarrollo:
+
+```bash
+npm run dev
+```
+
+## Construcción para producción
+
+```bash
+npm run build
+```
+
+## Vista previa de producción
+
+```bash
+npm run preview
+```
+
+## Portafolio en línea
+
+**Sitio web:** https://portafolio-two-snowy-10.vercel.app/
+
+## Contacto
+
+**Efren Barragan Castillo**
+
+* LinkedIn: https://www.linkedin.com/in/efren-barragan-castillo-10891637/
+* GitHub: https://github.com/Alfio-EBC
+* Correo: efrenbarragan606@gmail.com
+
+---
+
+© 2026 Efren Barragan Castillo. Todos los derechos reservados.
