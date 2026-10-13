@@ -64,7 +64,7 @@ function Contact() {
                         <div className="flex flex-col sm:flex-row flex-wrap justify-center gap-4">
                             {/* Hoja de vida sencilla */}
                             <a
-                                href="/src/pdf/cv-alfio-efren-barragan-castillo-sencilla.pdf"
+                                href="/pdf/cv-alfio-efren-barragan-castillo-sencilla.pdf"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 aria-label="Abrir hoja de vida sencilla en PDF"
@@ -89,7 +89,7 @@ function Contact() {
 
                             {/* Hoja de vida con diseño */}
                             <a
-                                href="/src/pdf/cv-alfio-efren-barragan-castillo-diseno.pdf"
+                                href="/pdf/cv-alfio-efren-barragan-castillo-diseno.pdf"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 aria-label="Abrir hoja de vida con diseño en PDF"
