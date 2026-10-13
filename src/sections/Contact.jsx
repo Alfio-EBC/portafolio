@@ -53,8 +53,6 @@ function Contact() {
                         </a>
                     </div>
 
-                    {/* Botones de hojas de vida */}
-
                     {/* Sección de hojas de vida */}
                     <div className="mt-10 pt-8 border-t border-slate-800">
                         <h3 className="text-center text-white font-semibold text-xl mb-2">Mi hoja de vida</h3>
@@ -66,7 +64,7 @@ function Contact() {
                         <div className="flex flex-col sm:flex-row flex-wrap justify-center gap-4">
                             {/* Hoja de vida sencilla */}
                             <a
-                                href="/imagenes/cv-Alfio-Efren-Barragan-Castillo-2026-sencilla.pdf"
+                                href="/src/imagenes/pdf/cv-alfio-efren-barragan-castillo-sencilla.pdf"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 aria-label="Abrir hoja de vida sencilla en PDF"
@@ -91,7 +89,7 @@ function Contact() {
 
                             {/* Hoja de vida con diseño */}
                             <a
-                                href="/imagenes/cv-Alfio-Efren-Barragan-Castillo-2026-diseno.pdf"
+                                href="/src/imagenes/pdf/cv-alfio-efren-barragan-castillo-diseno.pdf"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 aria-label="Abrir hoja de vida con diseño en PDF"

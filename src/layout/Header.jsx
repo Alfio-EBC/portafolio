@@ -8,6 +8,7 @@ const links = [
   { name: "Habilidades", href: "#skills" },
   { name: "Proyectos", href: "#projects" },
   { name: "Contacto", href: "#contact" },
+    { name: "CV", href: "#contact" },
 ];
 
 function Header() {
