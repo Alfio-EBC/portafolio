@@ -62,22 +62,43 @@ function Contact() {
                         </p>
 
                         <div className="flex flex-col sm:flex-row flex-wrap justify-center gap-4">
+                             {/* Hoja de vida con ats */}
+                            <a
+                                href="/pdf/hoja-de-vida-alfio-efren-barragan-castillo-2026.pdf"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                aria-label="Abrir hoja de vida con diseño en PDF"
+                                className="group inline-flex flex-1 min-w-0 items-center justify-center gap-2
+border border-slate-700 bg-slate-800/50
+text-gray-200 hover:border-green-500 hover:text-green-400
+hover:bg-slate-800 px-3 py-4 rounded-xl
+text-sm transition-all duration-300"
+                            >
+      <FileText
+                                    size={22}
+                              className="group-hover:rotate-6 transition-transform" />
+                                <span className="font-medium">Hoja de vida ATS</span>
+
+                                <Download
+                                    size={17}
+                                    className="text-green-100 group-hover:translate-y-0.5 transition-transform"
+                                />
+                            </a>
                             {/* Hoja de vida sencilla */}
                             <a
                                 href="/pdf/cv-alfio-efren-barragan-castillo-sencilla.pdf"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 aria-label="Abrir hoja de vida sencilla en PDF"
-                                className="group inline-flex items-center justify-center gap-3
-      border border-slate-700 bg-slate-800/50
-      text-gray-200 hover:border-green-500 hover:text-green-400
-      hover:bg-slate-800 px-6 py-4 rounded-xl
-      transition-all duration-300"
+                                className="group inline-flex flex-1 min-w-0 items-center justify-center gap-2
+border border-slate-700 bg-slate-800/50
+text-gray-200 hover:border-green-500 hover:text-green-400
+hover:bg-slate-800 px-3 py-4 rounded-xl
+text-sm transition-all duration-300"
                             >
                                 <FileText
                                     size={22}
-                                    className="text-green-500 group-hover:scale-110 transition-transform"
-                                />
+                                    className="group-hover:rotate-6 transition-transform" />
 
                                 <span className="font-medium">Hoja de vida sencilla</span>
 
@@ -93,10 +114,11 @@ function Contact() {
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 aria-label="Abrir hoja de vida con diseño en PDF"
-                                className="group inline-flex items-center justify-center gap-3
-      bg-green-600 hover:bg-green-700
-      text-white px-6 py-4 rounded-xl
-      transition-all duration-300"
+                                className="group inline-flex flex-1 min-w-0 items-center justify-center gap-2
+border border-slate-700 bg-slate-800/50
+text-gray-200 hover:border-green-500 hover:text-green-400
+hover:bg-slate-800 px-3 py-4 rounded-xl
+text-sm transition-all duration-300"
                             >
                                 <Palette size={22} className="group-hover:rotate-6 transition-transform" />
 
@@ -107,6 +129,7 @@ function Contact() {
                                     className="text-green-100 group-hover:translate-y-0.5 transition-transform"
                                 />
                             </a>
+
                         </div>
                     </div>
                 </div>
