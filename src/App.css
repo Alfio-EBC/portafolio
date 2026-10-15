@@ -1,11 +1,13 @@
-nav ul li:nth-child(6n) {
-  background-color: var(--color-green-500);
-  padding: 3px 5px;
-  border-radius: 4px;
-  transition: background-color 0.3s ease;
-}
 
+/*Boton cv**/
+nav ul li:nth-child(6) {
+    border:1px solid #00c950;
+    transition: background-color 0.3s ease;
+    border-radius: 4px;
+    padding: 3px 5px;
+}
 nav ul li:nth-child(6n):hover {
-  background-color: var(--color-green-700);
-  cursor: pointer;
+    background-color: transparent;
+    border:1px solid #00c950;
+    cursor: pointer;
 }

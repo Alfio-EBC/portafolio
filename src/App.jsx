@@ -6,6 +6,8 @@ import Skills from "./sections/Skills";
 import Projects from "./sections/Projects";
 import Contact from "./sections/Contact";
 import Footer from "./layout/Footer";
+import "../src/App.css";
+
 function App() {
   return (
     <>

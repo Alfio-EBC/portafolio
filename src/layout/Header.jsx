@@ -8,7 +8,7 @@ const links = [
   { name: "Habilidades", href: "#skills" },
   { name: "Proyectos", href: "#projects" },
   { name: "Contacto", href: "#contact" },
-    { name: "CV", href: "#contact" },
+  { name: "CV", href: "#contact" },
 ];
 
 function Header() {
@@ -21,16 +21,14 @@ function Header() {
         {/* Logo */}
         <h1 className="text-lg md:text-2xl font-bold">
     
-
- <img
-              src={logo}
-              alt="Efren Barragán, diseñador UI/UX y desarrollador Front-End"
-              className="w-full"
-              loading="eager"
-            />
-
-
-
+<a href="#about">
+  <img
+    src={logo}
+    alt="Efren Barragán, diseñador UI/UX y desarrollador Front-End"
+    className="w-full"
+    loading="eager"
+  />
+</a>
         </h1>
 
         {/* Menú Desktop */}
