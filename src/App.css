@@ -11,3 +11,11 @@ nav ul li:nth-child(6n):hover {
     border:1px solid #00c950;
     cursor: pointer;
 }
+.flair {
+  width: 100px;
+  height: 100px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+}
