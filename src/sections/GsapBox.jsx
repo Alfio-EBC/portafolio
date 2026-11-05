@@ -111,7 +111,7 @@ export default function GsapBox() {
   );
 
   return (
-    <div
+    <div id="skills" 
       ref={containerRef}
       className="bg-slate-950 relative flex flex-col items-center justify-center gap-12 min-h-[60vh]  text-white w-full px-6 overflow-hidden py-24"
     >
