@@ -39,7 +39,7 @@ const skillsData = [
     id: "react",
     title: "React",
     icon: Atom,
-    description: "Especializado en el desarrollo de aplicaciones web dinámicas con React y Vite. Manejo avanzado de estados, hooks personalizados, ciclo de vida e integración de librerías complejas de animación como GSAP.",
+    description: "Especializado en el desarrollo de aplicaciones web dinámicas con React y Vite. Manejo avanzado de estados, hooks personalizados, ciclo de vida e integración de librerías complejas de animación con gsap.",
   },
 ];
 
@@ -49,31 +49,29 @@ export default function GsapBox() {
 
   useGSAP(
     () => {
-      const mm = gsap.matchMedia();
-
-      // Animación con Keyframes sincronizada con el Scroll (sin rotación de cabeza)
-      mm.add("(min-width: 1024px)", () => {
-        gsap.to(".caja-animada", {
-          x: (index) => index * 145,
-          rotate: 0, // <--- Quitamos el giro de 180 grados para que no queden al revés
-          ease: "elastic.out(1, 0.5)",
-          stagger: 0.9,
+      // ANIMACIÓN FLUIDA SINCRONIZADA CON EL SCROLL (SUBIR Y BAJAR)
+      gsap.fromTo(
+        ".caja-animada",
+        {
+          opacity: 0,
+          y: 60,
+        },
+        {
+          opacity: 1,
+          y: 0,
+          ease: "power2.out",
+          stagger: 0.1,
           scrollTrigger: {
             trigger: containerRef.current,
-            start: "top 30%",
-            end: "+=50",
-            scrub: 1,
-            markers: false,
+            start: "top 80%",  // Empieza a animarse cuando la sección entra al 80% de la pantalla
+            end: "top 30%",    // Termina de revelarse por completo cuando llega al 30%
+            scrub: 1,          // Sincroniza la animación directamente con el scroll (subir y bajar fluido)
+            markers: false,    // Cambiar a true si deseas depurar visualmente
           },
-          keyframes: {
-            y: [0, 50, -10, 20, 0], 
-            ease: "none",
-            easeEach: "power2.inOut",
-          },
-        });
-      });
+        }
+      );
 
-      // Cursor Follower
+      // Cursor Follower (Nave espacial)
       gsap.set(".flair", {
         xPercent: -50,
         yPercent: 0,
@@ -115,7 +113,7 @@ export default function GsapBox() {
   return (
     <div
       ref={containerRef}
-      className="relative flex flex-col lg:flex-row items-center justify-center gap-8 min-h-[40vh] bg-slate-950 text-white w-full px-6 overflow-hidden py-20"
+      className="bg-slate-950 relative flex flex-col items-center justify-center gap-12 min-h-[60vh]  text-white w-full px-6 overflow-hidden py-24"
     >
       {/* SEGUIDOR CON LA IMAGEN SVG */}
       <div className="flair fixed top-0 left-0 pointer-events-none z-50">
@@ -127,34 +125,44 @@ export default function GsapBox() {
       </div>
 
       {/* Título Principal */}
-      <h1 className="text-3xl md:text-4xl font-bold whitespace-nowrap z-10 mb-6 lg:mb-0">
-        ¡Habilidades!
-      </h1>
+      <div className="text-center z-15 space-y-2">
+        <h2 className="text-green-400 font-mono text-sm tracking-widest uppercase">Especialidades</h2>
+        <h1 className="text-3xl md:text-5xl font-bold tracking-tight">Mis Habilidades</h1>
+      </div>
 
-      {/* Contenedor adaptativo */}
-      <div className="grid grid-cols-2 sm:grid-cols-2 lg:flex lg:relative items-center w-full max-w-xl lg:h-36 gap-4 lg:gap-0">
+      {/* Contenedor Grid Adaptativo */}
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 items-center justify-center gap-6 w-full max-w-5xl z-10">
         {skillsData.map((skill, index) => {
           const IconComponent = skill.icon;
-          const zIndexClass = `z-[${(skillsData.length - index) * 10}]`;
 
           return (
             <div
               key={skill.id}
               onClick={() => setSelectedSkill(skill)}
-              className={`caja-animada lg:absolute lg:left-0 flex flex-col items-center justify-center gap-2 p-3 w-32 h-32 rounded-xl border border-white/20 bg-slate-800/90 backdrop-blur hover:border-green-500 hover:shadow-lg hover:scale-105 cursor-pointer transition-all duration-300 shadow-md ${zIndexClass}`}
+              className="caja-animada flex flex-col items-start justify-between p-6 w-full h-48 rounded-2xl border border-white/10 bg-slate-800/60 backdrop-blur-md hover:border-green-500/50 hover:bg-slate-800 hover:shadow-xl hover:shadow-green-500/5 cursor-pointer transition-all duration-300 shadow-md group"
             >
-              <IconComponent className="w-6 h-6 text-green-400" />
-              <span className="text-xs font-semibold text-center">{skill.title}</span>
-              <span className="text-[10px] text-slate-400 underline mt-1">Ver experiencia</span>
+              <div className="flex items-center justify-between w-full">
+                <div className="p-3 rounded-xl bg-green-500/10 border border-green-500/20 group-hover:bg-green-500/20 transition-colors">
+                  <IconComponent className="w-6 h-6 text-green-400" />
+                </div>
+                <span className="text-xs text-slate-500 font-mono">0{index + 1}</span>
+              </div>
+
+              <div className="space-y-1">
+                <span className="text-lg font-semibold tracking-wide block">{skill.title}</span>
+                <span className="text-xs text-slate-400 group-hover:text-green-400 transition-colors flex items-center gap-1">
+                  Ver experiencia &rarr;
+                </span>
+              </div>
             </div>
           );
         })}
       </div>
 
-      {/* MODAL */}
+      {/* MODAL DE EXPERIENCIA */}
       {selectedSkill && (
-        <div className="fixed inset-0 z-[100] flex items-center justify-center bg-black/70 backdrop-blur-sm p-4">
-          <div className="relative bg-slate-800 border border-slate-700 w-full max-w-md p-6 rounded-2xl shadow-2xl text-white animate-in fade-in zoom-in duration-200">
+        <div className="fixed inset-0 z-[100] flex items-center justify-center bg-slate-950 backdrop-blur-sm p-4 animate-in fade-in duration-200">
+          <div className="relative bg-slate-800 border border-slate-700 w-full max-w-md p-6 rounded-2xl shadow-2xl text-white">
             <button 
               onClick={() => setSelectedSkill(null)}
               className="absolute top-4 right-4 text-slate-400 hover:text-white transition-colors p-1"
@@ -171,7 +179,7 @@ export default function GsapBox() {
             </div>
 
             <div className="space-y-3">
-              <h4 className="text-sm font-semibold text-green-400 uppercase tracking-wider">Mi Experiencia</h4>
+           
               <p className="text-slate-300 text-sm leading-relaxed">
                 {selectedSkill.description}
               </p>
@@ -182,7 +190,7 @@ export default function GsapBox() {
                 onClick={() => setSelectedSkill(null)}
                 className="px-5 py-2 bg-green-600 hover:bg-green-500 text-white text-sm font-medium rounded-lg transition-colors shadow-lg"
               >
-                Entendido
+                Cerrar
               </button>
             </div>
           </div>
