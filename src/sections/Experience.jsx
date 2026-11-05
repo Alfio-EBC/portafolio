@@ -13,7 +13,7 @@ function Experience() {
    
           <a
        
-            className="bg-[#] border border-white rounded-xl p-6 shadow-lg hover:border-green-400 hover:-translate-y-2 transition-all duration-300"
+            className="bg-[#001844b0] border border-[#01443b] rounded-xl p-6 shadow-lg hover:border-green-400 hover:-translate-y-2 transition-all duration-300"
           >
             <h3 className="text-2xl font-semibold text-green-500  mb-4">
               Instituto Humboldt
@@ -31,7 +31,7 @@ function Experience() {
           </a>
           <a
        
-            className="bg-[#] border border-white rounded-xl p-6 shadow-lg hover:border-green-400 hover:-translate-y-2 transition-all duration-300"
+            className="bg-[#001844b0] border border-[#01443b] rounded-xl p-6 shadow-lg hover:border-green-400 hover:-translate-y-2 transition-all duration-300"
           >
             <h3 className="text-2xl font-semibold text-green-500  mb-4">
               Universidad del Rosario
@@ -48,7 +48,7 @@ function Experience() {
           </a>
           <a
        
-            className="bg-[#] border border-white rounded-xl p-6 shadow-lg hover:border-green-400 hover:-translate-y-2 transition-all duration-300"
+            className="bg-[#001844b0] border border-[#01443b] rounded-xl p-6 shadow-lg hover:border-green-400 hover:-translate-y-2 transition-all duration-300"
           >
             <h3 className="text-2xl font-semibold text-green-500  mb-4">
               AuditBrain
@@ -65,7 +65,7 @@ function Experience() {
           </a>
           <a
        
-            className="bg-[#] border border-white rounded-xl p-6 shadow-lg hover:border-green-400 hover:-translate-y-2 transition-all duration-300"
+            className="bg-[#001844b0] border border-[#01443b] rounded-xl p-6 shadow-lg hover:border-green-400 hover:-translate-y-2 transition-all duration-300"
           >
             <h3 className="text-2xl font-semibold text-green-500  mb-4">
               Sainet Ingeniería
@@ -82,7 +82,7 @@ function Experience() {
           </a>
           <a
        
-            className="bg-[#] border border-white rounded-xl p-6 shadow-lg hover:border-green-400 hover:-translate-y-2 transition-all duration-300"
+            className="bg-[#001844b0] border border-[#01443b] rounded-xl p-6 shadow-lg hover:border-green-400 hover:-translate-y-2 transition-all duration-300"
           >
             <h3 className="text-2xl font-semibold text-green-500  mb-4">
               Novoclick.com
@@ -100,7 +100,7 @@ function Experience() {
           </a>
           <a
        
-            className="bg-[#] border border-white rounded-xl p-6 shadow-lg hover:border-green-400 hover:-translate-y-2 transition-all duration-300"
+            className="bg-[#001844b0] border border-[#01443b] rounded-xl p-6 shadow-lg hover:border-green-400 hover:-translate-y-2 transition-all duration-300"
           >
             <h3 className="text-2xl font-semibold text-green-500  mb-4">
               Daﬁti.com
@@ -116,7 +116,7 @@ function Experience() {
           </a>
           <a
        
-            className="bg-[#] border border-white rounded-xl p-6 shadow-lg hover:border-green-400 hover:-translate-y-2 transition-all duration-300"
+            className="bg-[#001844b0] border border-[#01443b] rounded-xl p-6 shadow-lg hover:border-green-400 hover:-translate-y-2 transition-all duration-300"
           >
             <h3 className="text-2xl font-semibold text-green-500  mb-4">
               Pac Gráﬁca Agencia publicitaria
@@ -132,7 +132,7 @@ function Experience() {
           </a>
           <a
        
-            className="bg-[#] border border-white rounded-xl p-6 shadow-lg hover:border-green-400 hover:-translate-y-2 transition-all duration-300"
+            className="bg-[#001844b0] border border-[#01443b] rounded-xl p-6 shadow-lg hover:border-green-400 hover:-translate-y-2 transition-all duration-300"
           >
             <h3 className="text-2xl font-semibold text-green-500  mb-4">
               Ideea Soluciones Ltda.
@@ -148,7 +148,7 @@ function Experience() {
           </a>
           <a
        
-            className="bg-[#] border border-white rounded-xl p-6 shadow-lg hover:border-green-400 hover:-translate-y-2 transition-all duration-300"
+            className="bg-[#001844b0] border border-[#01443b] rounded-xl p-6 shadow-lg hover:border-green-400 hover:-translate-y-2 transition-all duration-300"
           >
             <h3 className="text-2xl font-semibold text-green-500  mb-4">
               Calzado Caprino - Imacal Ltda
@@ -164,7 +164,7 @@ function Experience() {
           </a>
           <a
        
-            className="bg-[#] border border-white rounded-xl p-6 shadow-lg hover:border-green-400 hover:-translate-y-2 transition-all duration-300"
+            className="bg-[#001844b0] border border-[#01443b] rounded-xl p-6 shadow-lg hover:border-green-400 hover:-translate-y-2 transition-all duration-300"
           >
             <h3 className="text-2xl font-semibold text-green-500  mb-4">
               Directorio virtual publicitario s.a.s

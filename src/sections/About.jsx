@@ -1,4 +1,4 @@
-import personaje from "../imagenes/personaje-bot.png";
+import personaje from "../imagenes/robot-efren.gif";
 
 function About() {
   return (
@@ -35,12 +35,12 @@ function About() {
 
       {/* Imagen */}
       <figure className="flex justify-center order-1 lg:order-2">
-        <img
-          src={personaje}
-          alt="Ilustración representando a Efren Barragán"
-          className="w-full max-w-md animate-float"
-          loading="lazy"
-        />
+   <img
+  src={personaje}
+  alt="Ilustración representando a Efren Barragán"
+  className="w-full max-w-xl animate-float object-contain"
+  loading="lazy"
+/>
       </figure>
 
     </article>
