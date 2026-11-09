@@ -41,8 +41,7 @@ function Experience() {
               <br />
               <strong>Cargo:</strong> diseñador web UI/UX y maquetador Drupal
               <br />
-              <strong>Trabaje:</strong> desde el 19 de agosto del 2019, trabajo
-              actual.<br></br>
+              <strong>Trabaje:</strong> desde el 19 de agosto del 2019, al 1 diciembre 2024 .<br></br>
               <strong>Telefono:</strong> 312 589 92 61
             </p>
           </a>
