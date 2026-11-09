@@ -62,6 +62,23 @@ function Experience() {
               30 septiembre del 2018<br></br> <strong>Telefono:</strong> Tel: 755 27 55
             </p>
           </a>
+                  <a
+       
+            className="bg-[#001844b0] border border-[#01443b] rounded-xl p-6 shadow-lg hover:border-green-400 hover:-translate-y-2 transition-all duration-300"
+          >
+            <h3 className="text-2xl font-semibold text-green-500  mb-4">
+             Sigtemedia
+            </h3>
+            <p className="text-gray-300 leading-7">
+              <strong>Jefe:</strong> Luis Botia
+              <br />
+              <strong>Cargo:</strong> diseñador web lms, maquetador html, css y js 
+              <br />
+              <strong>Trabaje:</strong> desde el 18 de octubre del 2018 hasta el
+              1 abril del 2019 <br></br>
+              <strong>Celular:</strong> 310 806 07 95
+            </p>
+          </a>
           <a
        
             className="bg-[#001844b0] border border-[#01443b] rounded-xl p-6 shadow-lg hover:border-green-400 hover:-translate-y-2 transition-all duration-300"
@@ -79,6 +96,7 @@ function Experience() {
               30 septiembre del 2018 <br></br><strong>Telefono:</strong> 755 27 55
             </p>
           </a>
+       
           <a
        
             className="bg-[#001844b0] border border-[#01443b] rounded-xl p-6 shadow-lg hover:border-green-400 hover:-translate-y-2 transition-all duration-300"
